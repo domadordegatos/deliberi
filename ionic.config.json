@@ -1,0 +1,7 @@
+{
+  "name": "deliberi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
