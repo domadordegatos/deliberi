@@ -1,27 +1,25 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+#zoom-controls {
+  position: fixed;
+  top: 10px;  /* Ajusta la distancia desde la parte superior */
+  left: 10px;  /* Ajusta la distancia desde la parte izquierda */
+  z-index: 1000;
+  display: grid;
+  flex-direction: row;  /* Cambia la dirección a fila */
+  gap: 3px;  /* Espacio entre los botones */
 }
 
-#container strong {
+#zoom-controls button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
   font-size: 20px;
-  line-height: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+#zoom-controls button:hover {
+  background-color: #f0f0f0;
 }
